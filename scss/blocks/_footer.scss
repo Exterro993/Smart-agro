@@ -1,0 +1,127 @@
+footer {
+  .p {
+    font-family: "Poppins";
+    font-weight: 400;
+    font-size: clamp(10px, 1.39vw, 16px);
+    line-height: clamp(15px, 3.04vw, 35px);
+    text-align: center;
+    padding-top: 28px;
+    padding-bottom: 24px;
+  }
+
+  .footer__content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: clamp(20px,6.95vw,80px);
+    @media (max-width:600px){
+      text-align: center;
+    }
+
+    .container-1 {
+      &__logo {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+
+        span {
+          font-family: "Poppins";
+          font-weight: 700;
+          font-size: clamp(15px, 2.60vw, 30px);
+          line-height: clamp(14px, 2.43vw, 28px);
+        }
+      }
+
+      &__imgs {
+        padding-top: 25px;
+        display: flex;
+        align-items: center;
+        gap: 16px;
+
+        .container-1__img {
+          background-color: #EDFFFC;
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+    }
+
+    .container-2 {
+      ul {
+        li {
+          font-family: "Poppins";
+
+          span {
+            font-weight: 500;
+            font-size: clamp(10px, 1.73vw, 20px);
+            line-height: clamp(15px, 2.60vw, 30px);
+          }
+
+          a {
+            font-weight: 400;
+            font-size: clamp(10px, 1.39vw, 16px);
+            line-height: clamp(15px, 3.04vw, 35px);
+          }
+        }
+      }
+    }
+
+    .container-3 {
+      ul {
+        width: 131px;
+
+        li {
+          font-family: "Poppins";
+
+          span {
+            font-weight: 500;
+            font-size: clamp(10px, 1.73vw, 20px);
+            line-height: clamp(15px, 2.60vw, 30px);
+          }
+
+          a {
+            font-weight: 400;
+            font-size: clamp(10px, 1.39vw, 16px);
+            line-height: clamp(15px, 3.04vw, 35px);
+          }
+        }
+      }
+    }
+  }
+}
+
+.container-4 {
+  max-width: 325px;
+
+  p {
+    font-family: "Poppins";
+    font-weight: 500;
+    font-size: clamp(10px, 1.73vw, 20px);
+    line-height: clamp(15px, 2.60vw, 30px);
+    padding-bottom: 34px;
+  }
+
+  form {
+    input {
+      width: 100%;
+      height: 48px;
+      box-shadow: 0px 1px 2px 0px #00000040;
+    }
+
+    button {
+      color: #FFFFFF;
+      background-color: #02897A;
+      padding: 8px 15px 8px 15px;
+      font-family: "Poppins";
+      font-weight: 700;
+      font-size: clamp(10px, 1.39vw, 16px);
+      line-height: clamp(12px, 2.08vw, 24px);
+      border-radius: 4px;
+      margin-top: 21px;
+    }
+  }
+}
