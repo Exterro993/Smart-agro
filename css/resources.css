@@ -222,265 +222,325 @@ body {
   overflow-x: hidden;
 }
 
-.clients {
-  padding-bottom: 120px;
+.contents {
+  padding-bottom: 100px;
 }
-.clients-top p {
+.contents h1 {
   font-family: "Poppins";
   font-weight: 700;
-  font-size: clamp(20px, 3.47vw, 40px);
-  line-height: clamp(30px, 5.21vw, 60px);
+  font-size: clamp(16px, 2.95vw, 34px);
+  line-height: clamp(20px, 4.43vw, 51px);
   text-align: center;
 }
-.clients-bottom {
-  padding-top: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: clamp(32px, 5.56vw, 64px);
+.contents h3 {
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: clamp(10px, 1.39vw, 16px);
+  line-height: clamp(12px, 2.98vw, 34px);
+  text-align: center;
 }
-@media (max-width: 820px) {
-  .clients-bottom {
+.contents .more {
+  width: 150px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0 auto;
+  margin-top: 32px;
+}
+.contents .more p {
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: clamp(10px, 1.56vw, 18px);
+  line-height: clamp(13px, 2.26vw, 26px);
+}
+.contents .contetnts-wrap {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+@media (max-width: 1000px) {
+  .contents .contetnts-wrap {
     flex-wrap: wrap;
+    justify-content: center;
   }
 }
-
-.choose {
-  background-color: #22343d;
-  padding-bottom: 68px;
-  padding-top: 24px;
-}
-.choose-top p {
-  font-family: "Poppins";
-  font-weight: 700;
-  font-size: clamp(17px, 2.95vw, 34px);
-  line-height: clamp(26px, 4.43vw, 51px);
-  text-align: center;
-}
-.choose-bottom .cards {
+.contents__list {
   display: flex;
-  justify-content: center;
   align-items: center;
+  gap: 32px;
   flex-wrap: wrap;
-  padding-top: clamp(25px, 4.34vw, 50px);
-  gap: 30px;
+  justify-content: center;
 }
-.choose-bottom .cards .card {
-  border-radius: 10px;
-  width: 350px;
-  border: 1px solid #dedede;
-  text-align: center;
+.contents__list .content__card {
+  max-width: 348px;
+  position: relative;
+  z-index: 1;
 }
-.choose-bottom .cards .card__img {
-  padding-top: clamp(16px, 2.78vw, 32px);
+.contents__list .content__card:hover .content__card-text {
+  color: rgb(2, 137, 122);
 }
-.choose-bottom .cards .card__text {
-  font-family: "Poppins";
+.contents__list .content__card-text {
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  background-color: #fff;
+  color: rgb(34, 52, 61);
+  transition: 0.5s;
 }
-.choose-bottom .cards .card__text h3 {
+.contents__list .content__card-text p {
+  font-family: Poppins;
   font-weight: 700;
+  padding-top: 12px;
   font-size: clamp(12px, 2.08vw, 24px);
-  line-height: clamp(16px, 2.86vw, 33px);
-  padding-top: clamp(16px, 2.78vw, 32px);
+  padding-right: clamp(15px, 2.6vw, 30px);
+  padding-bottom: clamp(20px, 3.47vw, 40px);
+  padding-left: clamp(12px, 2.08vw, 24px);
 }
-.choose-bottom .cards .card__text p {
+.contents__list .content__card-text span {
+  font-family: Poppins;
   font-weight: 400;
   font-size: clamp(10px, 1.39vw, 16px);
-  line-height: clamp(13px, 2.34vw, 27px);
-  letter-spacing: 0.2px;
-  padding-top: clamp(10px, 1.39vw, 16px);
-  padding-bottom: clamp(17px, 2.95vw, 34px);
-  padding-right: lamp(17px, 3.21vw, 37px);
-  padding-left: lamp(17px, 3.3vw, 38px);
+  line-height: clamp(14px, 2.43vw, 28px);
+  padding-left: clamp(12px, 2.08vw, 24px);
+  padding-top: clamp(12px, 2.08vw, 24px);
+}
+.contents__list .content__card-img {
+  max-width: 348px;
+  position: relative;
+  z-index: -1;
+  top: 10px;
+}
+.contents__list .content__card-img img {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  width: 100%;
 }
 
-.product {
-  padding-bottom: clamp(20px, 13.04vw, 150px);
-  padding-top: clamp(20px, 13.04vw, 150px);
+.business {
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
-.product .join {
-  background-color: rgb(2, 137, 122);
-  border-radius: 32px;
-  max-width: 968px;
+.business__wrap {
   display: flex;
   align-items: center;
-  padding-left: 50px;
-  gap: 10px;
-  margin: 0 auto;
+  gap: 35px;
 }
-@media (max-width: 741px) {
-  .product .join {
+@media (max-width: 1000px) {
+  .business__wrap {
     flex-wrap: wrap;
-    padding-top: 50px;
     justify-content: center;
-    padding-left: 0px;
     text-align: center;
   }
 }
-.product .join-left {
-  max-width: 510px;
+.business-left {
+  max-width: 535px;
 }
-.product .join-left h1 {
+.business-left h1 {
   font-family: "Poppins";
   font-weight: 600;
-  font-size: clamp(16px, 2.78vw, 32px);
-  line-height: clamp(24px, 4.21vw, 48.45px);
+  font-size: clamp(20px, 3.47vw, 40px);
+  line-height: clamp(20px, 2.66vw, 39.6px);
+  letter-spacing: -3%;
 }
-.product .join-left button {
-  background-color: var(--text-color);
-  color: rgb(2, 137, 122);
-  border-radius: 8px;
-  margin-top: 50px;
-  padding: 13px 35px 13px 35px;
+.business-left p {
   font-family: "Poppins";
-  font-weight: 600;
-  font-size: clamp(10px, 1.73vw, 20px);
-  line-height: clamp(15px, 2.6vw, 30px);
-}
-.product .join-right__img {
-  max-width: 400px;
-}
-.product .join-right__img img {
-  width: 100%;
-}
-
-.work {
-  padding-bottom: 100px;
-  padding-top: 100px;
-}
-.work__cards {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  gap: clamp(30px, 8.69vw, 100px);
-}
-.work__cards .button {
-  display: flex;
-  justify-content: center;
-}
-.work__cards .button button {
-  max-width: 224px;
-  background-color: rgb(2, 137, 122);
-  color: var(--text-color);
-  padding: 11px 18px 11px 18px;
-  border-radius: 8px;
-}
-.work__cards .work__card {
-  display: flex;
-  gap: 30px;
-  align-items: center;
-  font-family: "Poppins";
-}
-@media (max-width: 900px) {
-  .work__cards .work__card {
-    flex-direction: column;
-    justify-content: center;
-  }
-  .work__cards .work__card:nth-child(2) {
-    flex-direction: column-reverse;
-  }
-}
-.work__cards .work__card-text {
-  max-width: 438px;
-}
-.work__cards .work__card-text h2 {
-  font-weight: 500;
-  font-size: clamp(10px, 1.73vw, 20px);
-  line-height: clamp(15px, 2.6vw, 30px);
-  padding-bottom: 16px;
-}
-.work__cards .work__card-text h1 {
-  font-weight: 600;
-  font-size: clamp(12px, 2.08vw, 24px);
-  line-height: clamp(18px, 3.13vw, 36px);
-  padding-bottom: 16px;
-}
-.work__cards .work__card-text p {
   font-weight: 400;
-  font-size: clamp(10px, 1.39vw, 16px);
-  line-height: clamp(14px, 2.43vw, 28px);
+  font-size: clamp(10px, 1.73vw, 20px);
+  line-height: clamp(16px, 2.78vw, 32px);
+  letter-spacing: -3%;
+  padding-top: clamp(12px, 2.08vw, 24px);
+  padding-bottom: clamp(12px, 2.08vw, 24px);
 }
-.work__cards .work__card-img {
-  max-width: 500px;
-  min-width: 300px;
+.business-left form {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid rgb(234, 234, 234);
+  border-radius: 100px;
+  background-color: var(--bg-color);
+  color: var(--text-color);
 }
-.work__cards .work__card-img img {
+.business-left form input {
+  margin: clamp(12.5px, 2.17vw, 25px);
+  background-color: transparent;
+}
+.business-left form input::-moz-placeholder {
+  color: var(--text-color);
+  font-family: "Poppins";
+  font-weight: 400;
+  line-height: clamp(8px, 1.39vw, 16px);
+  letter-spacing: -3%;
+}
+.business-left form input::placeholder {
+  color: var(--text-color);
+  font-family: "Poppins";
+  font-weight: 400;
+  line-height: clamp(8px, 1.39vw, 16px);
+  letter-spacing: -3%;
+}
+.business-left-imgs {
+  display: flex;
+  align-items: center;
+  padding-top: 24px;
+}
+.business-left-img-1 {
+  position: relative;
+}
+.business-left-img-2 {
+  position: relative;
+  right: 13px;
+}
+.business-left-img-3 {
+  position: relative;
+  right: 26px;
+}
+.business-left p {
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: clamp(8px, 1.39vw, 16px);
+  line-height: clamp(10px, 1.82vw, 21px);
+}
+.business-left p span {
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: clamp(8px, 1.39vw, 16px);
+  line-height: clamp(10px, 1.82vw, 21px);
+  color: #02897a;
+}
+.business-right {
+  max-width: 576.89px;
+  max-height: 400px;
+}
+.business-right img {
   width: 100%;
+  height: 100%;
 }
 
-.offers {
-  background-color: rgb(34, 52, 61);
+.contact {
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
-.offers__container {
-  max-width: 730px;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+.contact__wrap {
+  max-width: 871px;
   margin: 0 auto;
+  display: flex;
+  gap: 50px;
+  flex-direction: column;
+  justify-content: center;
 }
-.offers__top h1 {
-  max-width: 537px;
+.contact-top h1 {
   font-family: "Poppins";
   font-weight: 700;
-  font-size: clamp(16px, 2.78vw, 32px);
-  line-height: clamp(24px, 4.17vw, 48px);
+  font-size: clamp(17px, 2.95vw, 34px);
+  line-height: clamp(28.5px, 4.95vw, 57px);
+  letter-spacing: 0.2px;
+  padding-bottom: 27px;
   text-align: center;
-  padding-top: 35px;
 }
-.offers__bottom {
+.contact-top h2 {
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: clamp(10px, 1.56vw, 18px);
+  line-height: clamp(14px, 2.43vw, 28px);
+  letter-spacing: 0.2px;
+  padding-bottom: 50px;
+  text-align: center;
+}
+.contact-top .contact-images {
   display: flex;
-  padding-top: 100px;
-  gap: clamp(10px, 21.73vw, 250px);
-  padding-bottom: 45px;
+  align-items: center;
+  gap: 20px;
+  width: 200px;
+  margin: 0 auto;
 }
-@media (max-width: 500px) {
-  .offers__bottom {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
+.contact-top .contact-images .contact-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  border-radius: 50%;
 }
-.offers__bottom .card {
-  text-align: center;
+.contact-middle {
+  max-width: 871px;
+}
+.contact-middle img {
+  width: 100%;
+}
+.contact-bottom form {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  max-width: 250px;
+  gap: 45px;
+  background-color: rgb(34, 52, 61);
+  border: 1px solid rgb(70, 70, 70);
+  border-radius: 50px;
+  padding: 50px;
 }
-.offers__bottom .card-img_1 {
-  width: 150px;
-  height: 150px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-  background-color: rgb(255, 239, 239);
-}
-.offers__bottom .card-img_2 {
-  width: 150px;
-  height: 150px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-  background-color: rgb(242, 246, 255);
-}
-.offers__bottom .card-info {
+.contact-bottom form h1 {
   font-family: "Poppins";
-  padding-top: 27px;
+  font-weight: 700;
+  font-size: clamp(12px, 2.08vw, 24px);
+  line-height: clamp(11.5px, 2.86vw, 33px);
+  letter-spacing: 1px;
+  text-align: center;
 }
-.offers__bottom .card-info h2 {
-  font-weight: 500;
-  font-size: clamp(10px, 1.39vw, 16px);
-  line-height: clamp(14px, 2.43vw, 28px);
-  padding-bottom: 16px;
+.contact-bottom form input {
+  max-width: 770px;
+  border: 1px solid rgb(232, 232, 232);
+  border-radius: 35px;
+  padding: clamp(10px, 1.73vw, 20px);
 }
-.offers__bottom .card-info ul {
-  padding-bottom: 12px;
-}
-.offers__bottom .card-info ul li {
+.contact-bottom form input::-moz-placeholder {
+  color: rgb(34, 52, 61);
+  font-family: "Roboto";
   font-weight: 400;
-  font-size: clamp(10px, 1.56vw, 18px);
-  line-height: clamp(16px, 2.78vw, 32px);
+  font-size: clamp(10px, 1.3vw, 15px);
+  line-height: clamp(10px, 1.39vw, 16px);
+  letter-spacing: 0.1px;
+}
+.contact-bottom form input::placeholder {
+  color: rgb(34, 52, 61);
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: clamp(10px, 1.3vw, 15px);
+  line-height: clamp(10px, 1.39vw, 16px);
+  letter-spacing: 0.1px;
+}
+.contact-bottom form textarea {
+  max-width: 770px;
+  padding: clamp(10px, 1.73vw, 20px);
+  border: 1px solid rgb(232, 232, 232);
+}
+.contact-bottom form textarea::-moz-placeholder {
+  color: rgb(34, 52, 61);
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: clamp(10px, 1.3vw, 15px);
+  line-height: clamp(10px, 1.39vw, 16px);
+  letter-spacing: 0.1px;
+}
+.contact-bottom form textarea::placeholder {
+  color: rgb(34, 52, 61);
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: clamp(10px, 1.3vw, 15px);
+  line-height: clamp(10px, 1.39vw, 16px);
+  letter-spacing: 0.1px;
+}
+
+button {
+  background-color: var(--button-color);
+  color: var(--text-color);
+  border: none;
+  display: inline-block;
+  border-radius: 100px;
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: clamp(10px, 1.39vw, 16px);
+  padding: 25px 19px 25px 24px;
+  margin: 8px;
+}
+button:hover {
+  cursor: pointer;
 }
 
 footer .p {
@@ -584,4 +644,4 @@ footer .footer__content .container-3 ul li a {
   line-height: clamp(12px, 2.08vw, 24px);
   border-radius: 4px;
   margin-top: 21px;
-}/*# sourceMappingURL=customers.css.map */
+}/*# sourceMappingURL=resources.css.map */
